@@ -1,0 +1,1 @@
+FLASK_APP=meg_and_liz.py
