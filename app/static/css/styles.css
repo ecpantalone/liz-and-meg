@@ -1,0 +1,37 @@
+section {
+  max-width: 800px;
+}
+.pre-gallery {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-gap: 0;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-gap: 0;
+
+}
+
+.post-gallery {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  grid-gap: 0;
+
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
