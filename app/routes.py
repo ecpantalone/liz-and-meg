@@ -8,7 +8,7 @@ def index():
 
 @app.route('/ceremony')
 def ceremony():
-    return "Hello, World!"
+    return render_template('ceremony.html', title='Ceremony')
 
 @app.route('/history')
 def history():
