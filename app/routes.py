@@ -12,8 +12,8 @@ def ceremony():
 
 @app.route('/history')
 def history():
-    return "Hello, World!"
+    return render_template('history.html', title='History')
 
 @app.route('/contact')
 def contact():
-    return "Hello, World!"
+    return render_template('contact.html', title='Contact')

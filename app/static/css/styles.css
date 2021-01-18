@@ -1,25 +1,31 @@
 html {
   background-color: black;
   display: block;
-}
-
-.bg {
-  background-image: url('https://photos-liz-and-meg.s3.us-east-2.amazonaws.com/Liz+and+Meg+Dec+2020/post-ceremony/File_087.jpeg');
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;;
 }
 
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 90px;
   color: violet;
+  margin-top: 0px;
   margin-left: 105px;
   margin-right: auto;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  margin-left: 105px;
+  margin-right: auto;
+  /* display: block; */
+}
+
+h3 {
+  margin-left: 20px;
+  color: white;
 }
 
 a {
@@ -29,28 +35,8 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-family: 'Open Sans', sans-serif;
-  color: white;
-  margin-left: 105px;
-  margin-right: auto;
-  display: block;
-}
-
-h3 {
-  margin-left: 20px;
-  color: white;
-}
-
-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;;
-}
-
 section {
-  display: block;
+  /* display: block; */
   font-family: 'Open Sans', sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -62,6 +48,7 @@ section {
   border: solid violet;
   border-radius: 30px;
 }
+
 .pre-gallery {
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
@@ -70,7 +57,6 @@ section {
   /* margin: auto; */
   grid-gap: 0;
   padding-left: 30px;
-
 }
 
 .gallery {
@@ -81,7 +67,6 @@ section {
   /* margin: auto; */
   grid-gap: 0;
   padding-left: 30px;
-
 }
 
 .post-gallery {
@@ -92,7 +77,6 @@ section {
   /* margin: auto; */
   grid-gap: 0;
   padding-left: 30px;
-
 }
 
 img {
@@ -102,7 +86,6 @@ img {
   margin-right: 3px;
   margin-bottom: 10px;
   padding: 0px;
-
 }
 
 
