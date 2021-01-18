@@ -3,6 +3,17 @@ html {
   display: block;
 }
 
+.bg {
+  background-image: url('https://photos-liz-and-meg.s3.us-east-2.amazonaws.com/Liz+and+Meg+Dec+2020/post-ceremony/File_087.jpeg');
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 90px;
