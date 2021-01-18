@@ -1,16 +1,27 @@
 html {
   background-color: black;
+  display: block;
+}
+
+h1 {
   font-family: 'Pacifico', cursive;
+  font-size: 90px;
   color: violet;
+  margin-left: 105px;
+  margin-right: auto;
+}
+
+a {
+  color: white;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  text-decoration: none;
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
   color: white;
-  margin-left: auto;
+  margin-left: 105px;
   margin-right: auto;
   display: block;
 }
@@ -18,6 +29,13 @@ h2 {
 h3 {
   margin-left: 20px;
   color: white;
+}
+
+body {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;;
 }
 
 section {
@@ -31,6 +49,7 @@ section {
   width: 90%;
   max-width: 1200px;
   border: solid violet;
+  border-radius: 30px;
 }
 .pre-gallery {
   display: grid;
