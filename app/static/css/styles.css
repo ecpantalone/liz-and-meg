@@ -35,6 +35,16 @@ a {
   text-decoration: none;
 }
 
+p {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+br {
+  line-height: 30px;
+}
 section {
   /* display: block; */
   font-family: 'Open Sans', sans-serif;
