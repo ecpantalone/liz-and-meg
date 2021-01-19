@@ -79,6 +79,21 @@ section {
   padding-left: 30px;
 }
 
+.video-gallery {
+  /* display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto; */
+  padding-left: 30px;
+  padding-bottom: 30px;
+  /* margin: 0 auto; */
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+}
+
 img {
   height: 70%;
   width: 70%;
