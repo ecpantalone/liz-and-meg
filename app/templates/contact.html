@@ -35,24 +35,30 @@
 {% endblock %}
 {% block body %}
 <section class="contact">
-  <form action="">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email address..">
-
-
-    <label for="message">Subject</label>
-    <textarea id="message" name="message" placeholder="Send us a message!" style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+        {{ form.fname.label }}<br>
+        {{ form.fname(size=64) }}<br>
+        {% for error in form.fname.errors %}
+          <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.lname.label }}<br>
+        {{ form.lname(size=64) }}<br>
+        {% for error in form.lname.errors %}
+          <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.email.label }}<br>
+        {{ form.email(size=64) }}<br>
+        {% for error in form.email.errors %}
+          <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.body.label }}<br>
+        {{ form.body(size=64) }}<br>
+        {% for error in form.body.errors %}
+          <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>    
 </section>
-
 {% endblock %}
