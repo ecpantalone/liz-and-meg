@@ -1,10 +1,8 @@
 from app import app, mail
-from flask import render_template, flash, redirect, url_for
-from app.forms import ContactForm
-from flask_mail import Message
 import os
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+from flask import Flask, render_template, request, redirect, url_for, flash
+from flask_mail import Mail, Message
+from app.forms import ContactForm
 
 @app.route('/')
 @app.route('/index', methods=['GET'])
@@ -24,7 +22,7 @@ def contact():
             lname = form.lname.data
             text_body = form.greeting.data
             recipient = form.email.data
-            msg = Message(subject="A Message from {fname} {lname}!", recipients=[recipient, 'themrs.pantsfam@gmail.com'], sender='themrs.pantsfam@gmail.com')
+            msg = Message(subject="A Message from {fname} {lname}!", recipients=[recipient, 'themrs.pantsfam@gmail.com'])
             msg.body = text_body
             mail.send(msg)
             print('made it through send')
