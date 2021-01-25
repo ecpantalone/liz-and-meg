@@ -1,5 +1,4 @@
-FLASK_APP=meg_and_liz.py
-FLASK_APP=meg_and_liz.py
+FLASK_APP=liz_and_meg.py
 MAIL_USERNAME=
 MAIL_PASSWORD=
 MAIL_DEFAULT_SENDER=
