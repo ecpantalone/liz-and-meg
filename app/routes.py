@@ -22,7 +22,7 @@ def contact():
             lname = form.lname.data
             text_body = form.greeting.data
             recipient = form.email.data
-            msg = Message(subject="A Message from {fname} {lname}!", recipients=[recipient, 'themrs.pantsfam@gmail.com'])
+            msg = Message(subject=f"A Message from {fname} {lname}!", recipients=[recipient, 'themrs.pantsfam@gmail.com'])
             msg.body = text_body
             mail.send(msg)
             print('made it through send')
