@@ -6,10 +6,10 @@ load_dotenv(os.path.join(basedir, '.env'))
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'nope'
-    MAIL_SERVER='smtp.gmail.com'
-    MAIL_PORT = 465
+    MAIL_SERVER='smtp.sendgrid.net'
+    MAIL_PORT = 587
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    MAIL_USE_TLS = False
+    MAIL_PASSWORD = os.environ.get('SENDGRID_API_KEY')
+    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER')
     MAIL_USE_SSL = True
     LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')

@@ -1,3 +1,0 @@
-FLASK_APP=meg_and_liz.py
-MAIL_USERNAME=themrs.pantsfam
-MAIL_PASSWORD=6K4dXOpado*gBH8TyNPoQcaf5&va^1
