@@ -20,7 +20,6 @@ h2 {
   color: white;
   margin-left: 105px;
   margin-right: auto;
-  /* display: block; */
 }
 
 h3 {
@@ -48,12 +47,10 @@ br {
   line-height: 20px;
 }
 section {
-  /* display: block; */
   font-family: 'Open Sans', sans-serif;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;;
-  /* position: center; */
   background-color: black;
   width: 90%;
   max-width: 1200px;
@@ -63,42 +60,35 @@ section {
 
 .pre-gallery {
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   justify-content: center;
   align-items: center;
-  /* margin: auto; */
   grid-gap: 0;
   padding-left: 30px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   justify-content: center;
   align-items: center;
-  /* margin: auto; */
   grid-gap: 0;
   padding-left: 30px;
 }
 
 .post-gallery {
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   justify-content: center;
   align-items: center;
-  /* margin: auto; */
   grid-gap: 0;
   padding-left: 30px;
 }
 
 .video-gallery {
-  /* display: block;
-  justify-content: center;
-  align-items: center;
-  margin: auto; */
   padding-left: 30px;
   padding-bottom: 30px;
-  /* margin: 0 auto; */
+  padding-right: 30px;
 }
 
 .video {
@@ -224,4 +214,30 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+    margin: auto;
+  }
+
+  h2 {
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 8px;
+  }
+
+  .pre-gallery {
+    padding-left: 15px;
+  }
+  
+  .gallery {
+    padding-left: 15px;
+  }
+  
+  .post-gallery {
+    padding-left: 15px;
+  }
 }
