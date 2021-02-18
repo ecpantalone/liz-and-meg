@@ -30,7 +30,7 @@ def contact():
             return redirect(url_for('index'))
         except Exception as e:
             print(e)
-            # return 'There was an issue sending your message, please try again'
+            return 'There was an issue sending your message, please try again'
     return render_template('contact.html', title='Contact', form=form)
 
 
