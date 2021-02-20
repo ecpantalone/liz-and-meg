@@ -22,4 +22,10 @@ if not app.debug:
 
       app.logger.setLevel(logging.DEBUG)
       app.logger.info('Liz & Meg startup')
+      gunicorn_logger = logging.getLogger('gunicorn.error')
+      for handler in gunicorn_logger.handlers:
+          app.logger.addHandler(handler)
+          gunicorn_logger = logging.getLogger('gunicorn.error')
+      app.logger.handlers = gunicorn_logger.handlers
+      app.logger.setLevel(gunicorn_logger.level)
 from app import routes
