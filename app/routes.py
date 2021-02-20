@@ -1,7 +1,7 @@
 from app import app, mail
 import os
-from flask import Flask, render_template, request, redirect, url_for, flash
-from flask_mail import Mail, Message
+from flask import Flask, render_template, redirect, url_for, flash
+from flask_mail import Message
 from app.forms import ContactForm
 
 @app.route('/')
@@ -22,7 +22,7 @@ def contact():
             lname = form.lname.data
             text_body = form.greeting.data
             recipient = form.email.data
-            msg = Message(subject=f"A Message from {fname} {lname}!", recipients=[recipient, 'themrs.pantsfam@gmail.com'])
+            msg = Message(subject=f"A Message from {fname} {lname}!", recipients=[recipient, 'themrs.pantsfam@gmail.com', 'us@liz-and-meg.com'])
             msg.body = text_body
             mail.send(msg)
             print('made it through send')
