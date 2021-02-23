@@ -6,6 +6,8 @@ load_dotenv(os.path.join(basedir, '.env'))
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'nope'
+    AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY')
     MAIL_SERVER='smtp.sendgrid.net'
     MAIL_PORT = 25
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
