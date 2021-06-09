@@ -16,6 +16,14 @@ def index():
 def ceremony():
     return render_template('ceremony.html', title='Ceremony')
 
+@app.route('/party', methods=['GET'])
+def party():
+    return render_template('party.html', title='Party')
+
+@app.route('/hotel', methods=['GET'])
+def hotel():
+    return render_template('hotel.html', title='Hotel')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
