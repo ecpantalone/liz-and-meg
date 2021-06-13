@@ -25,7 +25,7 @@
                 gtag('config', 'G-B2PK7323SH');
         </script>
         <script>
-            function myFunction() {
+            function openMenu() {
             var x = document.getElementById("links");
                 if (x.style.display === "block") {
                     x.style.display = "none";
@@ -45,7 +45,7 @@
 
         <!-- Top Navigation Menu -->
         <div class="topnav">
-            <a class="logo" href="#home">liz & meg.</a>
+            <a href="#home" class="logo">liz & meg.</a>
                 <div id="links">
                     <a href="{{ url_for('index') }}">Home</a>
                     <a href="{{ url_for('ceremony') }}">Ceremony</a>
@@ -53,7 +53,7 @@
                     <a href="{{ url_for('hotel') }}">Hotel</a>
                     <a href="mailto:us@liz-and-meg.com">Send us a message 💌</a>
                 </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
