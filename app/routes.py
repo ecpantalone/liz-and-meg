@@ -24,6 +24,10 @@ def party():
 def hotel():
     return render_template('hotel.html', title='Hotel')
 
+@app.route('/around-town', methods=['GET'])
+def around_town():
+    return render_template('around_town.html', title='Things to do in Lexington')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()

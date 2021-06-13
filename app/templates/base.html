@@ -18,20 +18,45 @@
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2PK7323SH"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-        gtag('config', 'G-B2PK7323SH');
+                gtag('config', 'G-B2PK7323SH');
+        </script>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("links");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } 
+                else {
+                    x.style.display = "block";
+                }
+            }
         </script>
         {% block head %}{% endblock %}
     </head>
     <body>
         <h1>liz & meg.</h1>
             <h2>
-                <a href="{{ url_for('index') }}">Home</a>|<a href="{{ url_for('ceremony') }}">Ceremony</a>|<a href="{{ url_for('party') }}">Reception</a>|<a href="{{ url_for('hotel') }}">Hotel</a>|<a href="mailto:us@liz-and-meg.com">Send us a message 💌</a>
+                <a href="{{ url_for('index') }}">Home</a>|<a href="{{ url_for('ceremony') }}">Ceremony</a>|<a href="{{ url_for('party') }}">Reception</a>|<a href="{{ url_for('hotel') }}">Hotel</a>|<a href="{{ url_for('around_town') }}">Things to Do Around Town</a>|<a href="mailto:us@liz-and-meg.com">Send us a message 💌</a>
             </h2>
 
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a class="logo" href="#home">liz & meg.</a>
+                <div id="links">
+                    <a href="{{ url_for('index') }}">Home</a>
+                    <a href="{{ url_for('ceremony') }}">Ceremony</a>
+                    <a href="{{ url_for('party') }}">Party</a>
+                    <a href="{{ url_for('hotel') }}">Hotel</a>
+                    <a href="mailto:us@liz-and-meg.com">Send us a message 💌</a>
+                </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         {% block body %}
         
         {% endblock %}    
