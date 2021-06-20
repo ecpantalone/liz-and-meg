@@ -171,7 +171,7 @@ section {
   }
   
   .topnav a:hover {
-    background-color: #ddd;
+    /* background-color: #ddd; */
     color: black;
   }
 
@@ -179,7 +179,6 @@ section {
     font-family: 'Pacifico', cursive;
     font-size: 7vw;
     color: violet;
-    /* margin-top: 0px; */
   }
 
   h1 {
